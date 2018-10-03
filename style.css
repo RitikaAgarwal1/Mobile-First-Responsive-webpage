@@ -56,6 +56,9 @@ header{
 	width:100%;
 	display:flex;
 	padding: 5px 0;
+	position: fixed;
+    top: 0;
+    z-index: 1;
 }
 
 header span{
@@ -78,6 +81,7 @@ header input{
 
 header .fa-bars{
 	margin: 0 3px 0 5px;
+	cursor:pointer;
 }
 
 header .fa{
@@ -86,10 +90,36 @@ header .fa{
 
 /*content*/
 
+.menu{
+	margin:0;
+	padding:0;
+	text-align:center;
+	display:none;
+	margin-bottom: -48px;
+    margin-top: 45px;
+}
+
+.menu li{
+	padding: 10px;
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 18px;
+    background: #fff;
+	cursor:pointer;
+}
+
+.menu li:hover{
+	background: #f9f9f9;
+}
+
 section{
     box-shadow: 0 2px 11px 0 rgba(0, 0, 0, 0.1);
     background: #fff;
     margin:15px;
+}
+
+.containerlaptop{
+	margin-top: 48px;
 }
 
 .lastsection{
@@ -181,7 +211,7 @@ section{
     text-align: center;
 }
 
-.newsletter button, .carousel ul li button{
+.newsletter button, .carousel button{
 	display: block;
     margin: auto;
     border-radius: 108.1px;
@@ -190,6 +220,7 @@ section{
     color: #fff;
     margin-top: 22px;
     padding: 7px 17px;
+	cursor:pointer;
 }
 
 .newsletter .fa-envelope-o{
@@ -217,53 +248,51 @@ section{
 
 /*carousel*/
 
-.carousel ul li:first-child{
-	background-image:url('../images/car.jpg');
+figure{
+	margin:0;
+	position: relative;
 }
 
-.carousel ul li:last-child{
-	background-image:url('../images/1.jpg');
-}
-
-.carousel ul{
+.carousel div{
 	position:relative;
 }
 
-.carousel ul li{
+.carousel img{
+	position:relative;
 	width: 100%;
     height: 379px;
     color:#fff;
-    list-style-type: none;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background-color: rgba(0,0,0,0.5);
-    position: absolute;
-    background-size: 100% 100%;
+	background-color: rgba(0,0,0,0.5);
 }
 
-.carousel ul li h2, .carousel ul li button, .carousel ul li p{
+.c-content{
+	position: absolute;
+    color: #fff;
+    width: 98%;
+    top: 23%;
+}
+
+.carousel h2, .carousel button, .carousel p{
 	z-index: 1;
     position: relative;
     text-align: center;
     top: 15%;
 }
 
-.carousel ul li h2{
+.carousel h2{
 	margin: 23px;
 }
 
-.carousel ul li p{
+.carousel p{
 	width: 75%;
     margin: auto;
     font-size: 22px;
 }
 
-.carousel span{
+.carousel span.prev, .next{
 	position: absolute;
 	color: #fff;
-    z-index: 28;
+    z-index: 1;
     top: 45%;
     border-radius: 100px;
     width: 35px;
@@ -292,6 +321,7 @@ section{
 	height: 379px;
 	margin: 15px;
 	clear: both;
+	overflow:hidden;
 }
 
 /*carousel end*/
@@ -454,6 +484,16 @@ footer p{
 	.displayhide{
 		display:none;
 	}
+	
+	.menu{
+		width: 30%;
+		position: absolute;
+		margin-top:0;
+	}
+	
+	.menu li{
+		text-decoration:none;
+	}
 
 	header input{
     	width: 90%;
@@ -498,8 +538,18 @@ footer p{
 	footer{
 		text-align:right;
 	}
+	
+	.c-content{
+		top:8%;
+	}
+	
+	.carousel img{
+		height: 245px;
+	}
 
   }
+  
+  /* code for laptop */
 
   @media only screen and (min-width: 1140px){ 
 
@@ -513,8 +563,20 @@ footer p{
 
   	.containerlaptop{
   		width: 90%;
-    	margin: 40px auto auto auto;
+    	margin: 80px auto auto auto;
   	}
+	
+	.menu{
+		width: 11%;
+		position: absolute;
+		top: 0;
+	}
+	
+	.menu li{
+		text-decoration:none;
+		font-size: 14px;
+		box-shadow: -2px 1px 1px 1px #ddd;
+	}
 
   	.newsletterad{
   		width: 92%;
