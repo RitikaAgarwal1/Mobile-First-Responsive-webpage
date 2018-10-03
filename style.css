@@ -500,3 +500,102 @@ footer p{
 	}
 
   }
+
+  @media only screen and (min-width: 1140px){ 
+
+  	header input{
+  		margin-left: 16%;
+  	}
+
+  	.marginlaptop{
+  		margin:15px;
+  	}
+
+  	.containerlaptop{
+  		width: 90%;
+    	margin: 40px auto auto auto;
+  	}
+
+  	.newsletterad{
+  		width: 92%;
+    	height: 265px;
+    	background:#fff;
+    	border:1px solid #ddd;
+  	}
+
+  	.laptopflex{
+  		display:flex;
+  	}
+
+  	.laptop50{
+  		width:50%;
+  	}
+
+  	.laptop33{
+  		width:33.33%;
+  	}
+
+  	.laptop66{
+  		width:66.66%;
+  	}
+
+  	.hidden{
+  		display:block;
+  	}
+
+  	.hideshow{
+  		display:none;
+  	}
+
+  	.img1{
+  		height:444px;
+  	}
+
+  	.img2{
+  		height:321px;
+  	}
+
+  	.image2height img{
+  		height:181px;
+  	}
+
+  	.font18laptop{
+  		font-size:18px;
+  	}
+
+  	.font16laptop{
+  		font-size:16px;
+  	}
+
+  	.font14laptop{
+  		font-size:14px;
+  	}
+
+  	.font34laptop{
+  		font-size:34px;
+  	}
+
+  	.font30laptop{
+  		font-size:30px;
+  	}
+
+  	.font22laptop{
+  		font-size:22px;
+  	}
+
+  	.margin10{
+  		margin: 10px auto;
+  	}
+
+  	.lastsection img{
+  		height:279px;
+  	}
+
+  	.lastsection div span:first-of-type{
+  		width:370px;
+  	}
+
+  	footer{
+  		text-align:right;
+  	}
+}
