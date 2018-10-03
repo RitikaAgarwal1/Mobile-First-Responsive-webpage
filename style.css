@@ -5,7 +5,7 @@ body{
 	background: #f7f7f7;
 }
 
-p, h1, h2, h3{
+p, h1, h2, h3, .nomargin, .lastsection{
 	margin:0;
 }
 
@@ -92,8 +92,8 @@ section{
     margin:15px;
 }
 
-section:first-of-type, .lastsection{
-	margin:0;
+.lastsection{
+	box-shadow:none;
 }
 
 .headingline{
@@ -435,3 +435,68 @@ footer a:hover{
 footer p{
 	margin-top:20px;
 }
+
+/*code for responsive---tablet*/
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+	.tabflex{
+		display:flex;
+	}
+
+	.percent50{
+		width:50%;
+	}
+
+	.displayhide{
+		display:none;
+	}
+
+	header input{
+    	width: 90%;
+	}	
+
+	.carousel ul li, .carousel{
+		height:248px;
+	}
+
+	.nobg div.tabflex, .nobg div.tabflex:nth-of-type(2) div.percent50{
+		border:none;
+	}
+
+	.nobg div.tabflex div.percent50{
+		border-bottom: 1px solid #d8d8d8;
+	}
+
+	.nomargintab{
+		margin:0;
+	}
+
+	.sidemargin{
+		margin:0 15px;
+	}
+
+	.font12tab{
+		font-size:12px;
+	}
+
+	.font26tab{
+		font-size:26px;
+	}
+
+	.font18tab{
+		font-size:18px;
+	}
+
+	.lastsection img{
+		height:246px;
+	}
+
+	footer{
+		text-align:right;
+	}
+
+  }
