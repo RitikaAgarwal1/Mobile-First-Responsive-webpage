@@ -9,7 +9,7 @@ p, h1, h2, h3, .nomargin, .lastsection{
 	margin:0;
 }
 
-.hidden{
+.hidden, .hiddenshow{
 	display:none;
 }
 
@@ -485,6 +485,10 @@ footer p{
 		display:none;
 	}
 	
+	.hiddenshow{
+		display:block;
+	}
+	
 	.menu{
 		width: 30%;
 		position: absolute;
@@ -537,6 +541,16 @@ footer p{
 
 	footer{
 		text-align:right;
+		display:flex;
+		padding: 15px 5%;
+	}
+	
+	footer span{
+		flex:1;
+	}
+	
+	footer span img{
+		float:left;
 	}
 	
 	.c-content{
@@ -601,7 +615,7 @@ footer p{
   		width:66.66%;
   	}
 
-  	.hidden{
+  	.hidden, .hiddenshow{
   		display:block;
   	}
 
@@ -658,6 +672,16 @@ footer p{
   	}
 
   	footer{
-  		text-align:right;
-  	}
+		text-align:right;
+		display:flex;
+		padding: 15px 5%;
+	}
+	
+	footer span{
+		flex:1;
+	}
+	
+	footer span img{
+		float:left;
+	}
 }
