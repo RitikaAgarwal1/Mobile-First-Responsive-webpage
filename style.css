@@ -1,0 +1,437 @@
+body{
+	font-family: 'Lato', sans-serif;
+	color: #222222;
+	margin: 0;
+	background: #f7f7f7;
+}
+
+p, h1, h2, h3{
+	margin:0;
+}
+
+.hidden{
+	display:none;
+}
+
+.font22{
+	font-size:22px;
+}
+
+.font26{
+	font-size:26px;
+}
+
+.font14{
+	font-size:14px;
+}
+
+.font28{
+	font-size:28px;
+}
+
+.font12{
+	font-size:12px;
+}
+
+.font11{
+	font-size:11px;
+}
+
+.paddingdiv{
+	padding:15px;
+}
+
+.margindiv{
+	margin:15px
+}
+
+.clearfix{
+	clear:both;
+}
+
+/*header*/
+
+header{
+	background:#fff;
+	width:100%;
+	display:flex;
+	padding: 5px 0;
+}
+
+header span{
+	width:50%;
+}
+
+header h3{
+	display:inline;
+	position: relative;
+    top: -4px;
+}
+
+header input{
+	width: 78%;
+    border: none;
+    top: -5px;
+    height: 25px;
+    position: relative;
+}
+
+header .fa-bars{
+	margin: 0 3px 0 5px;
+}
+
+header .fa{
+	font-size: 30px;
+}
+
+/*content*/
+
+section{
+    box-shadow: 0 2px 11px 0 rgba(0, 0, 0, 0.1);
+    background: #fff;
+    margin:15px;
+}
+
+section:first-of-type, .lastsection{
+	margin:0;
+}
+
+.headingline{
+	border-top: 3px solid;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.yellowborder{
+	border-color: #edd30d;
+    width: 66px;
+}
+
+.coralborder{
+	border-color: #f26c60;
+    width: 76px;
+}
+
+.lightblueborder{
+	border-color: #60bcf2;
+    width: 57px;
+}
+
+.pinkborder{
+	border-color: #f260a4;
+    width: 145px;
+}
+
+.navyblueborder{
+	border-color: #6093f2;
+    width: 86px;
+}
+
+.blueborder{
+	border-color: #2f73e4;
+    width: 173px;
+}
+
+.alexbox{
+	display:flex;
+	margin-top:10px;
+}
+
+.Alex-Parkinson{
+    color: #818181;
+    font-size: 16px;
+    margin-top: 12px;
+    display: block;
+}
+
+.dateline {
+    font-weight: 300;
+    font-size: 14px;
+    color: #3d3d3d;
+}
+
+.nobg{
+	box-shadow:none;
+	background:transparent;
+}
+
+.nobg div{
+	padding:15px;
+	border-bottom: 1px solid #d8d8d8;
+}
+
+.nobg div:last-of-type{
+	border-bottom: none;
+}
+
+/*newsletter*/
+
+.newsletter{
+	width: 92%;
+    height: 265px;
+    display: table;
+    background-color: #2f73e4;
+    color:#fff;
+    margin:auto;
+}
+
+.newsletter span{
+	display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.newsletter button, .carousel ul li button{
+	display: block;
+    margin: auto;
+    border-radius: 108.1px;
+    background: transparent;
+    border: solid 1.6px #ffffff;
+    color: #fff;
+    margin-top: 22px;
+    padding: 7px 17px;
+}
+
+.newsletter .fa-envelope-o{
+	font-size: 32px;
+}
+
+.newsletter p{
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.newsletter input{
+	height: 25px;
+    border-radius: 4.3px;
+    background-color: #ffffff;
+    border: 0;
+    width: 80%;
+    margin-top: 15px;
+    padding-left: 5px;
+}
+
+.newsletter ::placeholder{
+	color:#a0a0a0;
+}
+
+/*carousel*/
+
+.carousel ul li:first-child{
+	background-image:url('../images/car.jpg');
+}
+
+.carousel ul li:last-child{
+	background-image:url('../images/1.jpg');
+}
+
+.carousel ul{
+	position:relative;
+}
+
+.carousel ul li{
+	width: 100%;
+    height: 379px;
+    color:#fff;
+    list-style-type: none;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    background-size: 100% 100%;
+}
+
+.carousel ul li h2, .carousel ul li button, .carousel ul li p{
+	z-index: 1;
+    position: relative;
+    text-align: center;
+    top: 15%;
+}
+
+.carousel ul li h2{
+	margin: 23px;
+}
+
+.carousel ul li p{
+	width: 75%;
+    margin: auto;
+    font-size: 22px;
+}
+
+.carousel span{
+	position: absolute;
+	color: #fff;
+    z-index: 28;
+    top: 45%;
+    border-radius: 100px;
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
+    background: rgba(0, 0, 0, .3);
+}
+
+.carousel .fa{
+	line-height: 35px;
+    width: 35px;
+    text-align: center;
+    cursor:pointer;
+}
+
+.carousel .prev{
+	left: 10px;
+}
+
+.carousel .next{
+	right: 10px;
+}
+
+.carousel{
+	position:relative;
+	height: 379px;
+	margin: 15px;
+	clear: both;
+}
+
+/*carousel end*/
+
+.donald {
+    background-image: url(../images/trump.jpg);
+    height: 511px;
+    background-size: 100% 100%;
+    color: #fff;
+    display: table;
+    margin:15px;
+}
+
+.donald span {
+    display: table-cell;
+    vertical-align: bottom;
+    padding: 15px;
+}
+
+.donald small{
+	font-size: 16px;
+    margin-top: 12px;
+    display:block;
+}
+
+.readmore{
+	display: inline-flex;
+    float: right;
+    cursor: pointer;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.readmore .fa-long-arrow-right {
+    font-size: 28px;
+    margin-left: 5px;
+}
+
+.imgdivide div{
+	background:#fff;
+	display: flex;
+	box-shadow: 0 1px 7px 0 rgba(0, 0, 0, 0.1);
+	padding:0;
+	margin-bottom: 15px;
+}
+
+.imgdivide div span, .lastsection div span{
+	width:50%;
+}
+
+.imgdivide .font12{
+	color: #818181;
+    margin-top: 2px;
+    display: block;
+    width: 100%;
+}
+
+.lastsection .lightblueborder{
+	width:41px;
+	border-color: #60bcf2;
+}
+
+.lastsection .pinkborder{
+	width:109px;
+	border-color: #f260a4;
+}
+
+.headinglinesmall {
+    border-top: 2px solid;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.lastsection div{
+	display:flex;
+	margin: 5px 0;
+}
+
+.lastsection .font12{
+	margin-top: 5px;
+    display: block;
+    width: 100%;
+}
+
+.oval {
+  width: 16px;
+  height: 16px;
+  background-color: #2f73e4;
+  display: inline-block;
+  border-radius: 25px;
+  margin: 0 5px;
+}
+
+.ovalparent{
+	text-align:center;
+}
+
+.ovalsection{
+	margin: 0px;
+    box-shadow: none;
+    padding: 15px;
+}
+
+/*footer*/
+
+footer{
+	padding: 15px;
+    background: #212121;
+    width: auto;
+  	text-align:center;
+  	color:#fff;
+  	font-size:13px;
+}
+
+footer a:link{
+	color:#fff;
+	border-right:1px solid #fff;
+	text-decoration: none;
+	padding: 0 5px;
+}
+
+footer a:link:last-of-type{
+	border:none;
+}
+
+footer a:active{
+	color:#fff;
+	text-decoration: none;
+}
+
+footer a:visited{
+	color:#fff;
+	text-decoration: none;
+}
+
+footer a:hover{
+	color:#fff;
+	text-decoration: none;
+}
+
+footer p{
+	margin-top:20px;
+}
