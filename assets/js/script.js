@@ -20,6 +20,6 @@ $(document).ready(function(){
 	//toggle menubar
 	
 	$(".fa-bars").click(function(){
-		$(".menu").slideToggle(500);
+		$(".nav-bar").slideToggle(500);
 	});
 })
