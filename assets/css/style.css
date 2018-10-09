@@ -5,73 +5,34 @@ body{
 	background: #f7f7f7;
 }
 
-p, h1, h2, h3, .nomargin, .lastsection{
+p, h1, h2, h3{
 	margin:0;
-}
-
-.hidden, .hiddenshow{
-	display:none;
-}
-
-.font22{
-	font-size:22px;
-}
-
-.font26{
-	font-size:26px;
-}
-
-.font14{
-	font-size:14px;
-}
-
-.font28{
-	font-size:28px;
-}
-
-.font12{
-	font-size:12px;
-}
-
-.font11{
-	font-size:11px;
-}
-
-.paddingdiv{
-	padding:15px;
-}
-
-.margindiv{
-	margin:15px
-}
-
-.clearfix{
-	clear:both;
 }
 
 /*header*/
 
-header{
+.page-header{
 	background:#fff;
 	width:100%;
 	display:flex;
 	padding: 5px 0;
-	position: fixed;
-    top: 0;
-    z-index: 1;
 }
 
-header span{
-	width:50%;
+.page-header span, .food-health-image, .food-health-headline, .recent-stories-image, .recent-stories-headline{
+	flex:1;
 }
 
-header h3{
+.title{
+	font-size:22px;
+}
+
+.page-header h3{
 	display:inline;
 	position: relative;
     top: -4px;
 }
 
-header input{
+.page-header input{
 	width: 78%;
     border: none;
     top: -5px;
@@ -79,27 +40,25 @@ header input{
     position: relative;
 }
 
-header .fa-bars{
+.page-header .fa-bars{
 	margin: 0 3px 0 5px;
 	cursor:pointer;
 }
 
-header .fa{
+.page-header .fa{
 	font-size: 30px;
 }
 
 /*content*/
 
-.menu{
+.nav-bar{
 	margin:0;
 	padding:0;
 	text-align:center;
 	display:none;
-	margin-bottom: -48px;
-    margin-top: 45px;
 }
 
-.menu li{
+.nav-bar li{
 	padding: 10px;
     font-weight: bold;
     text-decoration: underline;
@@ -108,28 +67,29 @@ header .fa{
 	cursor:pointer;
 }
 
-.menu li:hover{
+.nav-bar li:hover{
 	background: #f9f9f9;
 }
 
-section{
+section, .food-health-content{
     box-shadow: 0 2px 11px 0 rgba(0, 0, 0, 0.1);
     background: #fff;
     margin:15px;
 }
 
-.containerlaptop{
-	margin-top: 48px;
+.section-heading{
+	font-size:16px;
+	font-weight:bold;
+	border-bottom:3px solid #000;
+	margin-bottom:10px;
 }
 
-.lastsection{
-	box-shadow:none;
+.business-article-section-two .section-heading{
+	font-size:14px;
 }
 
-.headingline{
-	border-top: 3px solid;
-    display: block;
-    margin-bottom: 10px;
+.politicalnews .section-heading, .politics-article-image h2, .food-health-heading .section-heading, .recent-stories-heading .section-heading{
+	font-size:28px;
 }
 
 .yellowborder{
@@ -159,39 +119,80 @@ section{
 
 .blueborder{
 	border-color: #2f73e4;
-    width: 173px;
+    width: 182px;
 }
 
-.alexbox{
+.section-one, .recent-stories-article{
+	margin:0;
+}
+
+.section-one-content, .business-article-content, .politics-article-content, .food-article-content{
+	padding:15px;
+}
+
+.article-headline, .business-headline, .politics-brief, .food-headline{
+	font-size: 26px;
+}
+
+.article-brief, .newsletter-ad, .footer-logo{
+	display:none;
+}
+
+.business-brief, .food-brief{
+	font-size:14px;
+	color:#5c5c5c;
+	margin-top: 15px;
+}
+
+.correspondent-info{
 	display:flex;
 	margin-top:10px;
 }
 
-.Alex-Parkinson{
-    color: #818181;
+.correspondent-details p:first-child, .business-article-info, .politics-article-info, .food-article-info{
+	color: #818181;
     font-size: 16px;
     margin-top: 12px;
-    display: block;
 }
 
-.dateline {
-    font-weight: 300;
+.correspondent-details p:last-child{
+	color: #3d3d3d;
     font-size: 14px;
-    color: #3d3d3d;
+    font-weight:lighter;
 }
 
-.nobg{
+.news-headline{
+	font-size:22px;
+	font-weight:bold;
+}
+
+.business-article-section-two .yellowborder{
+	width:61px;
+}
+
+.politicalnews, .food-health-heading{
+	margin: 15px;
+	clear: both;
+}
+
+.grey-background{
 	box-shadow:none;
 	background:transparent;
 }
 
-.nobg div{
+.business-article-section-two div, .news-content{
 	padding:15px;
 	border-bottom: 1px solid #d8d8d8;
 }
 
-.nobg div:last-of-type{
+.business-article-section-two div:last-of-type, .news-article:last-of-type .news-content:last-child{
 	border-bottom: none;
+}
+
+.news-article-info{
+	font-size: 14px;
+	color: #818181;
+	margin-top:12px;
 }
 
 /*newsletter*/
@@ -205,7 +206,7 @@ section{
     margin:auto;
 }
 
-.newsletter span{
+.newsletter div{
 	display: table-cell;
     vertical-align: middle;
     text-align: center;
@@ -281,6 +282,7 @@ figure{
 
 .carousel h2{
 	margin: 23px;
+	font-size: 28px;
 }
 
 .carousel p{
@@ -326,8 +328,8 @@ figure{
 
 /*carousel end*/
 
-.donald {
-    background-image: url(../images/trump.jpg);
+.politics-article-image {
+    background-image: url(../images/politics-image.jpg);
     height: 511px;
     background-size: 100% 100%;
     color: #fff;
@@ -335,13 +337,13 @@ figure{
     margin:15px;
 }
 
-.donald span {
+.politics-article-image div{
     display: table-cell;
     vertical-align: bottom;
     padding: 15px;
 }
 
-.donald small{
+.politics-article-image small{
 	font-size: 16px;
     margin-top: 12px;
     display:block;
@@ -351,62 +353,62 @@ figure{
 	display: inline-flex;
     float: right;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 24px;
     margin-bottom: 15px;
 }
 
-.readmore .fa-long-arrow-right {
+.readmore .fa-long-arrow-right{
     font-size: 28px;
     margin-left: 5px;
 }
 
-.imgdivide div{
-	background:#fff;
-	display: flex;
-	box-shadow: 0 1px 7px 0 rgba(0, 0, 0, 0.1);
-	padding:0;
-	margin-bottom: 15px;
-}
-
-.imgdivide div span, .lastsection div span{
-	width:50%;
-}
-
-.imgdivide .font12{
-	color: #818181;
-    margin-top: 2px;
-    display: block;
-    width: 100%;
-}
-
-.lastsection .lightblueborder{
-	width:41px;
-	border-color: #60bcf2;
-}
-
-.lastsection .pinkborder{
-	width:109px;
-	border-color: #f260a4;
-}
-
-.headinglinesmall {
-    border-top: 2px solid;
-    display: block;
-    margin-bottom: 10px;
-}
-
-.lastsection div{
+.food-health-content, .recent-stories-content{
 	display:flex;
-	margin: 5px 0;
+	margin: 0 0 15px 0;
 }
 
-.lastsection .font12{
-	margin-top: 5px;
-    display: block;
-    width: 100%;
+.food-health-headline .headline, .recent-stories-headline .headline{
+	font-size:14px;
+	color:#222;
+	padding:15px;
 }
 
-.oval {
+.food-health-info, .recent-stories-info{
+	font-size:12px;
+	color:#818181;
+	padding: 0 15px;
+}
+
+.food-health-heading .pinkborder{
+	width:179px;
+}
+
+.food-headline{
+	color:#222;
+}
+
+.recent-stories-article{
+	box-shadow: none;
+	clear: both;
+	padding:15px;
+}
+
+.recent-stories-article .recent-stories-headline .section-heading{
+	font-size:11px;
+	margin:0 15px;
+}
+
+.recent-stories-article .recent-stories-headline .pinkborder{
+	width: 109px;
+}
+
+.recent-stories-date-info{
+	font-size:10px;
+	margin:0 15px;
+	color:#3d3d3d;
+}
+
+.circle {
   width: 16px;
   height: 16px;
   background-color: #2f73e4;
@@ -415,11 +417,11 @@ figure{
   margin: 0 5px;
 }
 
-.ovalparent{
+.circleparent{
 	text-align:center;
 }
 
-.ovalsection{
+.circlesection{
 	margin: 0px;
     box-shadow: none;
     padding: 15px;
@@ -427,7 +429,7 @@ figure{
 
 /*footer*/
 
-footer{
+.page-footer{
 	padding: 15px;
     background: #212121;
     width: auto;
@@ -436,33 +438,33 @@ footer{
   	font-size:13px;
 }
 
-footer a:link{
+.page-footer a:link{
 	color:#fff;
 	border-right:1px solid #fff;
 	text-decoration: none;
 	padding: 0 5px;
 }
 
-footer a:link:last-of-type{
+.page-footer a:link:last-of-type{
 	border:none;
 }
 
-footer a:active{
+.page-footer a:active{
 	color:#fff;
 	text-decoration: none;
 }
 
-footer a:visited{
+.page-footer a:visited{
 	color:#fff;
 	text-decoration: none;
 }
 
-footer a:hover{
+.page-footer a:hover{
 	color:#fff;
 	text-decoration: none;
 }
 
-footer p{
+.page-footer p{
 	margin-top:20px;
 }
 
@@ -473,84 +475,120 @@ footer p{
   and (max-device-width: 1024px) 
   and (-webkit-min-device-pixel-ratio: 1) {
 
-	.tabflex{
+	.section-one, .business-article, .politics-article-container, .news-article, .food-health-container{
 		display:flex;
 	}
-
-	.percent50{
-		width:50%;
+	
+	.section-one-image, .section-one-content, .business-article-section-one, .business-article-section-two, .politics-article-image, .politics-article-one, .news-content, .food-health-container .grey-background, .food-health-section, .page-footer span{
+		flex:1;
 	}
-
-	.displayhide{
+	
+	.section-heading, .business-article-section-two .section-heading, .business-brief, .food-brief, .recent-stories-article .recent-stories-headline .section-heading, .recent-stories-date-info{
+		font-size:12px;
+	}
+	
+	.yellowborder{
+		width:53px;
+	}
+	
+	.coralborder{
+		width:61px;
+	}
+	
+	.lightblueborder{
+		width:46px;
+	}
+	
+	.pinkborder{
+		width:121px;
+	}
+	
+	.business-article-section-two .yellowborder{
+		width:52px;
+	}
+	
+	.navyblueborder{
+		width:81px;
+	}
+	
+	.blueborder{
+		width:169px;
+	}
+	
+	.recent-stories-article .recent-stories-headline .pinkborder{
+		width:122px;
+	}
+	
+	.article-headline, .business-headline, .politics-brief{
+		font-size: 22px;
+	}
+	
+	.correspondent-details p:first-child, .business-article-info, .politics-article-info, .politics-article-image small, .food-article-info, .recent-stories-info{
+		font-size:14px;
+	}
+	
+	.correspondent-details p:last-child{
+		font-size:10px;
+	}
+	
+	.news-headline, .food-headline{
+		font-size:18px;
+	}
+	
+	.newsletter, .readmore{
 		display:none;
 	}
 	
-	.hiddenshow{
-		display:block;
+	.politicalnews .section-heading, .food-health-heading .section-heading, .recent-stories-heading .section-heading{
+		font-size:26px;
+		font-weight:bold;
 	}
 	
-	.menu{
+	.recent-stories-headline .headline{
+		font-size:26px;
+	}
+	
+	.politics-article-two{
+		margin:0;
+	}
+	
+	.news-content{
+		padding: 15px 0;
+		margin: 0 15px;
+	}
+	
+	.news-article:last-of-type .news-content{
+		border:none;
+	}
+	
+	.politics-article-image h2{
+		font-size:32px;
+	}
+	
+	.food-health-heading .pinkborder{
+		width:166px;
+	}
+	
+	.food-health-section img{
+		height:200px;
+	}
+	
+	.nav-bar{
 		width: 30%;
 		position: absolute;
 		margin-top:0;
 	}
 	
-	.menu li{
+	.nav-bar li{
 		text-decoration:none;
 	}
 
 	header input{
-    	width: 90%;
+    	margin-left: 10%;
 	}	
 
 	.carousel ul li, .carousel{
 		height:248px;
-	}
-
-	.nobg div.tabflex, .nobg div.tabflex:nth-of-type(2) div.percent50{
-		border:none;
-	}
-
-	.nobg div.tabflex div.percent50{
-		border-bottom: 1px solid #d8d8d8;
-	}
-
-	.nomargintab{
-		margin:0;
-	}
-
-	.sidemargin{
-		margin:0 15px;
-	}
-
-	.font12tab{
-		font-size:12px;
-	}
-
-	.font26tab{
-		font-size:26px;
-	}
-
-	.font18tab{
-		font-size:18px;
-	}
-
-	.lastsection img{
-		height:246px;
-	}
-
-	footer{
-		text-align:right;
-		display:flex;
-		padding: 15px 5%;
-	}
-	
-	footer span{
-		flex:1;
-	}
-	
-	footer span img{
-		float:left;
 	}
 	
 	.c-content{
@@ -560,128 +598,186 @@ footer p{
 	.carousel img{
 		height: 245px;
 	}
+	
+	.recent-stories-image img{
+		height:246px;
+	}
 
+	.page-footer{
+		text-align:right;
+		display:flex;
+		padding: 15px 2%;
+		font-size:18px;
+	}
+	
+	.footer-logo{
+		display:block;
+	}
+	
+	.page-footer span img{
+		float:left;
+	}
+	
   }
   
   /* code for laptop */
 
   @media only screen and (min-width: 1140px){ 
+  
+	.main-content{
+		padding: 20px 85px 0 85px;
+	}
 
-  	header input{
+  	.page-header input{
   		margin-left: 16%;
   	}
-
-  	.marginlaptop{
-  		margin:15px;
-  	}
-
-  	.containerlaptop{
-  		width: 90%;
-    	margin: 80px auto auto auto;
-  	}
 	
-	.menu{
-		width: 11%;
-		position: absolute;
-		top: 0;
+	.section-one{
+		display: flex;
+		margin: 15px;
 	}
 	
-	.menu li{
-		text-decoration:none;
-		font-size: 14px;
-		box-shadow: -2px 1px 1px 1px #ddd;
+	.section-one-image{
+		flex:1;
+		height: 444px;
 	}
-
-  	.newsletterad{
+	
+	.section-one-content, .business-article-section-one, .business-article-section-two, .newsletter-container, .politics-article-image, .politics-article-one, .politics-article-two, .food-health-container .grey-background, .food-health-section, .page-footer span{
+		flex:1;
+	}
+	
+	.recent-stories-headline, .recent-stories-image{
+		width:33.33%;
+		flex: none;
+	}
+	
+	.section-heading, .recent-stories-info{
+		font-size:18px;
+	}
+	
+	.yellowborder{
+		width:73px;
+	}
+	
+	.coralborder{
+		width:64px;
+	}
+	
+	.lightblueborder{
+		width:48px;
+	}
+	
+	.pinkborder{
+		width:128px;
+	}
+	
+	.business-article-section-two .yellowborder{
+		width:58px;
+	}
+	
+	.article-headline, .politicalnews .section-heading, .politics-article-image h2, .food-health-heading .section-heading, .recent-stories-heading .section-heading{
+		font-size: 34px;
+	}
+	
+	.article-brief, .food-brief{
+		display:block;
+		font-size: 18px;
+	}
+	
+	.business-article, .politics-article, .food-health-container{
+		display: flex;
+	}
+	
+	.business-headline, .politics-brief{
+		font-size:24px;
+	}
+	
+	.business-article .section-heading, .business-article-info, .recent-stories-article .recent-stories-headline .section-heading, .recent-stories-date-info{
+		font-size:14px;
+	}
+	
+	.newsletter-ad{
   		width: 92%;
     	height: 265px;
     	background:#fff;
     	border:1px solid #ddd;
+		margin: 10px auto;
+		display: block;
   	}
+	
+	.newsletter{
+		margin: 10px auto;
+	}
+	
+	.politics-article-container{
+		display:flex;
+		width:66.66%;
+	}
+	
+	.readmore{
+		display:none;
+	}
+	
+	.nav-bar{
+		width: 11%;
+		position: absolute;
+		top: 45px;
+	}
+	
+	.nav-bar li{
+		text-decoration:none;
+		font-size: 14px;
+		box-shadow: -2px 1px 1px 1px #ddd;
+	}
+	
+	.food-health-image img{
+		height:181px;
+	}
+	
+	.food-health-heading .pinkborder {
+		width: 217px;
+	}
+	
+	.food-health-headline .headline{
+		font-size:22px;
+	}
+	
+	.food-health-info{
+		font-size:16px;
+	}
+	
+	.food-health-section img{
+		height:321px;
+	}
+	
+	.food-headline, .recent-stories-headline .headline{
+		font-size:30px;
+	}
+	
+	.blueborder{
+		width:213px;
+	}
+	
+	.recent-stories-image img{
+		height:273px;
+	}
+	
+	.recent-stories-article .recent-stories-headline .pinkborder {
+		width: 145px;
+	}
 
-  	.laptopflex{
-  		display:flex;
-  	}
-
-  	.laptop50{
-  		width:50%;
-  	}
-
-  	.laptop33{
-  		width:33.33%;
-  	}
-
-  	.laptop66{
-  		width:66.66%;
-  	}
-
-  	.hidden, .hiddenshow{
-  		display:block;
-  	}
-
-  	.hideshow{
-  		display:none;
-  	}
-
-  	.img1{
-  		height:444px;
-  	}
-
-  	.img2{
-  		height:321px;
-  	}
-
-  	.image2height img{
-  		height:181px;
-  	}
-
-  	.font18laptop{
-  		font-size:18px;
-  	}
-
-  	.font16laptop{
-  		font-size:16px;
-  	}
-
-  	.font14laptop{
-  		font-size:14px;
-  	}
-
-  	.font34laptop{
-  		font-size:34px;
-  	}
-
-  	.font30laptop{
-  		font-size:30px;
-  	}
-
-  	.font22laptop{
-  		font-size:22px;
-  	}
-
-  	.margin10{
-  		margin: 10px auto;
-  	}
-
-  	.lastsection img{
-  		height:279px;
-  	}
-
-  	.lastsection div span:first-of-type{
-  		width:370px;
-  	}
-
-  	footer{
+  	.page-footer{
 		text-align:right;
 		display:flex;
 		padding: 15px 5%;
+		font-size:18px;
 	}
 	
-	footer span{
-		flex:1;
+	.footer-logo{
+		display:block;
 	}
 	
-	footer span img{
+	.page-footer span img{
 		float:left;
 	}
 }
