@@ -639,6 +639,9 @@ figure{
 	
 	.section-one-image{
 		flex:1;
+	}
+	
+	.section-one-image img{
 		height: 444px;
 	}
 	
