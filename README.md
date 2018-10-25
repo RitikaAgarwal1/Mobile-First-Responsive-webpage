@@ -1,4 +1,4 @@
-# Quintype
+# Mobile First Responsive Webpage
  Front-end Developer coding assignment
 
 Please find below the link of the page for your review  -
