@@ -2,7 +2,7 @@
  Front-end Developer coding assignment
 
 Please find below the link of the page for your review  -
-https://ritikaagarwal1.github.io/Quintype/
+https://ritikaagarwal1.github.io/Mobile-First-Responsive-webpage/
 
 A few important characteritics regarding the development -
 
